@@ -5,43 +5,21 @@
 
 }
 
+.s1__inner {
+
+}
+
 .s1-grid {
-
-}
-
-.grid {
-
-}
-
-.grid__item {
-
+  max-width: rem(740);
+  margin-inline: auto;
 }
 
 .s1__products {
+  margin-top: rem(25);
+  width: rem(300);
+  margin-inline: auto;
 
+  @include mq(md) {
+    width: rem(400);
+  }
 }
-
-.products {
-
-}
-
-.js-fadeInUp {
-
-}
-
-.products__item {
-
-}
-
-.product {
-
-}
-
-.product__name {
-
-}
-
-.product__price {
-
-}
-

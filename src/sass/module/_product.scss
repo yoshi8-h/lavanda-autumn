@@ -1,0 +1,39 @@
+@use "global" as *;
+
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(10);
+  align-items: center;
+  line-height: 1;
+  padding-block: rem(20);
+  padding-inline: rem(10);
+  letter-spacing: 0.07em;
+  position: relative;
+  transition: opacity 0.3s ease-out;
+}
+
+.product:hover {  // hover時のアクション
+  opacity: 0.55;
+}
+
+.product:nth-of-type(n + 2) {  // 2番目以降の要素にborder-topを付与
+  border-top: 1px dashed #000;
+}
+
+.product__name {
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+.product__price {
+  font-size: rem(12);
+
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
