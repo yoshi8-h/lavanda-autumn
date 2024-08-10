@@ -1,0 +1,77 @@
+@use "global" as *;
+
+
+.fv {
+  padding-top: rem(30);
+  padding-bottom: rem(10);
+  text-align: center;
+  background: $color-accent1;
+
+  @include mq(md) {
+    padding-bottom: rem(40);
+  }
+}
+
+.fv__inner {
+
+}
+
+.fv__title {
+
+}
+
+.fv__title-number {
+  font-family: $second-font-family;
+  font-size: rem(18);
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.fv__title-words {
+  position: relative;
+}
+
+.fv__title-word1 {
+  font-size: rem(20);
+  white-space: nowrap;
+
+  @include mq(md) {
+    font-size: rem(34);
+  }
+}
+
+.fv__title-word2 {
+  font-family: serif;
+  font-size: rem(18);
+  position: absolute;
+  top: rem(10);
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(md) {
+    font-size: rem(32);
+    top: rem(14);
+  }
+}
+
+.fv__img {
+  display: block;
+  margin-top: rem(20);
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.fv__logo-text {
+  margin-top: rem(10);
+  font-size: rem(22);
+  font-weight: bold;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
