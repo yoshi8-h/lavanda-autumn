@@ -1,0 +1,42 @@
+@use "global" as *;
+
+
+.bottom {
+  @include mq(md) {
+    width: 42.8%;
+  }
+}
+
+.bottom__cards {
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.bottom__products-container {
+  margin-top: rem(22);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: rem(10);
+  column-gap: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(35);
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.bottom__products-left {
+
+}
+
+.bottom__products-right {
+
+}

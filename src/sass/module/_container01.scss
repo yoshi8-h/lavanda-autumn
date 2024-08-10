@@ -1,0 +1,31 @@
+@use "global" as *;
+
+
+.container01 {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.container01__top {
+
+}
+
+.container01__top img {
+  width: 100%;
+  max-width: 100%;
+
+  @include mq(md) {
+    width: rem(450);
+    // width: 45.2%;
+  }
+}
+
+.container01__bottom {
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+

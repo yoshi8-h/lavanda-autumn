@@ -6,5 +6,21 @@
 }
 
 .products__item {
+  width: rem(300);
 
+  @include mq(md) {
+    width: rem(360);
+    margin-inline: auto;
+  }
+}
+
+
+
+
+/* モディファイア */
+// products--divide (s2 セクション)
+.products--divide:nth-of-type(n + 2) {  // 2番目以降の要素にborder-topを付与
+  @include mq(md) {
+    border-top: 1px dashed #000;
+  }
 }

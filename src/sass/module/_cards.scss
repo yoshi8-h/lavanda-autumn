@@ -1,0 +1,34 @@
+@use "global" as *;
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(5);
+
+  @include mq(md) {
+    gap: 0;
+  }
+}
+
+.cards__item {
+  width: 33.3%;
+
+  @include mq(md) {
+    width: rem(214);
+    gap: 0;
+  }
+}
+
+.cards__item.hidden-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.cards__item.is-right {
+  @include mq(md) {
+    margin-left: rem(-3);
+  }
+}
