@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.l-s7 {
+  margin-top: rem(50);
+
+  @include mq(md) {
+    margin-top: rem(200);
+  }
+}
