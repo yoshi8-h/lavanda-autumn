@@ -1,3 +1,13 @@
 @use "global" as *;
 
 
+.l-s11 {
+  margin-top: rem(50);
+  padding-top: rem(40);
+  padding-bottom: rem(50);
+
+  @include mq(md) {
+    padding-top: rem(220);
+    padding-bottom: rem(180);
+  }
+}
