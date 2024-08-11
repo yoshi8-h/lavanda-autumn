@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.s4-sp {
+  overflow-x: hidden;
+}
+
+.s4-sp__inner {
+
+}
+
+.s4-sp__swiper {
+  width: 130vw;
+  margin-left: calc(50% - 55vw);  // 親要素をはみ出るように指定。(『width: 100vw;』と併用で適用可能)
+}
+
+.s4-sp__swiper-wrapper {
+
+}
+
+.s4-sp__swiper-slide {
+  width: calc(664px / 750px * 100vw);
+  width: rem(280);
+
+  @include mq(md) {
+    width: rem(664);
+  }
+}
+
+.s4-sp__swiper-img {
+
+  img {
+
+  }
+}
+
+.s4-sp__products {
+  margin-top: rem(23);
+}
