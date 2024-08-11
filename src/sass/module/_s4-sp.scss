@@ -2,6 +2,10 @@
 
 .s4-sp {
   overflow-x: hidden;
+
+  @include mq(md) {
+    display: none;
+  }
 }
 
 .s4-sp__inner {
