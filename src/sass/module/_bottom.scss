@@ -44,12 +44,18 @@
 
 
 
-
 // モディファイア
 // s6 セクション
 .bottom--s6 .bottom__cards {
   margin-top: rem(10);
 
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+// s9 セクション
+.bottom--s9 .bottom__cards {
   @include mq(md) {
     margin-top: 0;
   }

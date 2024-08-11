@@ -58,3 +58,32 @@
     width: 31.8%;
   }
 }
+
+
+// s9 セクション
+.cards--s9 {
+  justify-content: space-between;
+
+  @include mq(md) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(19);
+  }
+}
+
+.cards--s9 .cards__item.hidden-sp {  // SP時は非表示
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.cards--s9 .cards__item {
+  width: 50%;
+
+  @include mq(md) {
+    width: 100%;
+  }
+}

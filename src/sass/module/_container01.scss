@@ -46,3 +46,34 @@
     width: 100%;
   }
 }
+
+
+// s9 セクション
+.container01--s9 .container01__top.hidden-pc {  // PC時のみ非表示
+  display: block;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.container01--s9 .container01__top {
+  @include mq(md) {
+    width: 60%;
+  }
+}
+
+.container01--s9 .container01__top img {
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+.container01--s9 .container01__bottom {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    width: 32%;
+    margin-top: 0;
+  }
+}

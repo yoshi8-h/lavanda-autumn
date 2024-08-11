@@ -1,3 +1,29 @@
 @use "global" as *;
 
 
+.s9 {
+
+}
+
+.s9__inner {
+
+}
+
+.s9__container {
+
+}
+
+.s9__products {
+
+}
+
+.s9__products .products__item {
+  margin-right: 0;
+  margin-left: auto;
+  border-bottom: 1px dashed #000;
+
+  @include mq(md) {
+    margin-top: rem(50);
+    margin-inline: auto;
+  }
+}
