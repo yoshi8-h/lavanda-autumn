@@ -7,10 +7,28 @@
 
 .products__item {
   width: rem(300);
+  margin-inline: auto;
 
   @include mq(md) {
     width: rem(360);
     margin-inline: auto;
+  }
+}
+
+
+
+// s3など、商品リストの位置がSPとPCで大きく異なる場合
+.products.hidden-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.products.hidden-sp {
+  display: none;
+
+  @include mq(md) {
+    display: block;
   }
 }
 
