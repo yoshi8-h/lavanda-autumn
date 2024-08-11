@@ -1,0 +1,22 @@
+@use "global" as *;
+
+
+.s6 {
+  background: $color-accent1;
+}
+
+.s6__inner {
+
+}
+
+.s6__container {
+
+}
+
+.s6__products {
+  margin-top: rem(25);
+
+  @include mq(md) {
+    margin-top: rem(45);
+  }
+}

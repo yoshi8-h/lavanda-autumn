@@ -1,0 +1,12 @@
+@use "global" as *;
+
+
+.l-s6 {
+  padding-top: rem(70);
+  padding-bottom: rem(50);
+
+  @include mq(md) {
+    padding-top: rem(160);
+    padding-bottom: rem(50);
+  }
+}
