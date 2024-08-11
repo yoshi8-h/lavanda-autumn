@@ -19,4 +19,15 @@ const s4SpSwiper = new Swiper("#js-s4-sp-swiper", {
   speed: 900,  // 切り替わる最中のスピード(ミリ秒)
 });
 
+/* -------------------------------------------------------------------------------- */
+/* swiper (スワイパー) s8 */
+const s8Swiper = new Swiper("#js-s8-swiper", {
+  loop: true,
+  effect: 'fade',
 
+  speed: 700,  // 切り替わる最中のスピード(ミリ秒)
+  autoplay: {  // 自動再生ON
+    delay: 4000,  // 次のスライドに切り替わるまでの時間
+    disableOnInteraction: false,  // ユーザーがドラッグなどの操作をしても自動再生が止まらないように。
+  },
+});

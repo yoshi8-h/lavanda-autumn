@@ -1,0 +1,13 @@
+@use "global" as *;
+
+
+.l-s8 {
+  margin-top: rem(50);
+  padding-top: rem(100);
+  padding-bottom: rem(40);
+
+  @include mq(md) {
+    padding-top: rem(150);
+    padding-bottom: rem(100);
+  }
+}
