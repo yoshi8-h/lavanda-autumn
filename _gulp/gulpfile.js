@@ -183,8 +183,22 @@ const watchFiles = () => {
   watch(srcPath.html, series(htmlCopy, browserSyncReload));
 };
 
+
+
+
+
+// ===================================================================
+// フォントをdistにコピーするタスク
+const copyFonts = () => {
+  return src('../src/fonts/**/*').pipe(dest('../dist/fonts'));
+};
+// ===================================================================
+
+
+
+
 // ブラウザシンク付きの開発用タスク
-exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parallel(watchFiles, browserSyncFunc));
+exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy, copyFonts), parallel(watchFiles, browserSyncFunc));
 
 // 本番用タスク
-exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy);
+exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy, copyFonts);
